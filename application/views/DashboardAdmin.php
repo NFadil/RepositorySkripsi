@@ -34,10 +34,10 @@
 				<div class="navbar-custom-menu">
 					<ul class="nav navbar-nav">
 						<li class="dropdown tasks-menu">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-								<!-- <i class="fa fa-flag-o"></i>
-								<span class="label label-danger">3</span> -->
-							</a>
+							<!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<i class="fa fa-flag-o"></i>
+								<span class="label label-danger">3</span>
+							</a> -->
 							<ul class="dropdown-menu">
 								<li class="header">You have 3 tasks</li>
 								<li>
@@ -64,7 +64,7 @@
 						<!-- User Account -->
 						<li class="dropdown user user-menu">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-								<img src="<?=base_url()?>Asset/dist/img/user2-160x160.jpg" class="user-image">
+								<img src="<?php echo $this->session->userdata('foto'); ?>" class="user-image">
 								<span class="hidden-xs"><?php echo $this->session->userdata('username'); ?></span>
 							</a>
 							<ul class="dropdown-menu">
@@ -94,11 +94,11 @@
 			<section class="sidebar">
 				<div class="user-panel">
 					<div class="pull-left image">
-						<img src="<?=base_url()?>Asset/dist/img/user2-160x160.jpg" class="img-circle">
+						<img src="<?php echo $this->session->userdata('foto'); ?>" class="img-circle">
 					</div>
 					<div class="pull-left info">
 						<p><?php echo $this->session->userdata('username'); ?></p>
-						<!-- <a href="#"><i class="fa fa-circle text-success"></i> Online</a> -->
+						<a href="#"><i class="fa fa-circle text-success"></i> <?php echo $this->session->userdata('level'); ?></a>
 					</div>
 				</div>
 				<form action="#" method="get" class="sidebar-form">
@@ -113,48 +113,17 @@
 				<ul class="sidebar-menu" data-widget="tree">
 					<li class="header">MAIN NAVIGATION</li>
 					<li>
-						<a href=""><i class="fa fa-dashboard"></i> <span>Dashboard</span></a>
+						<a href="<?php echo site_url('City');?>"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a>
 					</li>
 					<li>
-						<a href=""><i class="fa fa-archive"></i> <span>Data Jurnal</span></a>
+						<a href="<?php echo site_url('Admin');?>"><i class="fa fa-archive"></i> <span>Data Jurnal</span></a>
 					</li>
 					<li>
 						<a href="">
 							<i class="fa fa-users"></i> <span>Mahasiswa</span>
 						</a>
 					</li>
-					<!-- <li class="treeview">
-						<a href="#">
-							<i class="fa fa-archive"></i> <span>Products</span>
-							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
-						</a>
-						<ul class="treeview-menu">
-							<li><a href="#"><i class="fa fa-circle-o"></i> Categories</a></li>
-							<li><a href="#"><i class="fa fa-circle-o"></i> Units</a></li>
-							<li><a href="#"><i class="fa fa-circle-o"></i> Items</a></li>
-						</ul>
-					</li>
-					<li class="treeview">
-						<a href="#">
-							<i class="fa fa-shopping-cart"></i> <span>Transaction</span>
-							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
-						</a>
-						<ul class="treeview-menu">
-							<li><a href="#"><i class="fa fa-circle-o"></i> Sales</a></li>
-							<li><a href="#"><i class="fa fa-circle-o"></i> Stock In</a></li>
-							<li><a href="#"><i class="fa fa-circle-o"></i> Stock Out</a></li>
-						</ul>
-					</li> -->
-					<!-- <li class="treeview">
-						<a href="#">
-							<i class="fa fa-pie-chart"></i> <span>Reports</span>
-							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
-						</a>
-						<ul class="treeview-menu">
-							<li><a href="#"><i class="fa fa-circle-o"></i> Sales</a></li>
-							<li><a href="#"><i class="fa fa-circle-o"></i> Stocks</a></li>
-						</ul>
-					</li> -->
+				
 					<li class="header">SETTINGS</li>
 					<li><a href="#"><i class="fa fa-user"></i> <span>Admin</span></a></li>
 				</ul>
@@ -163,7 +132,20 @@
 
 		<!-- Content Wrapper -->
 		<div class="content-wrapper">
-			<!-- <?php echo $contents ?> -->
+			<selection class="content-header">
+			<h1>Dashboard
+				<small>Panel</small>
+			</h1>
+			<io class="breadcrumb">
+				<li><a herf="#" ><i class="fa  fa-dashboard"></i></a></li>
+				<li class="active">Dashboard</li>
+			</io>
+			</selection>
+			<!-- Main Content -->
+			<selection class="content">
+				dashboard page
+
+			</selection>
 		</div>
 
 		<footer class="main-footer">
