@@ -5,8 +5,10 @@ class Home extends CI_Controller {
             $level = $this->session->userdata('level');
             $foto = $this->session->userdata('foto');
             if ($level == "admin") {
+                $this->load->view("NavbarAdmin");
                 $this->load->view("DashboardAdmin");
             } else if ($level == "user") {
+                $this->load->view("NavbarUser");
                 $this->load->view("DashboardUser");
             }
         } else {
