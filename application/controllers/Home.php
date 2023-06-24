@@ -2,7 +2,8 @@
 class Home extends CI_Controller {
     function index (){
         if($this->session->userdata('login')){
-            $this->load->view("home");
+            $this->load->view("DashboardAdmin");
+            
         }else{
             $this->load->view("login");
         }

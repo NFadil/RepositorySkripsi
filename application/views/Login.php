@@ -20,12 +20,12 @@
 
     <!--------------------------- Left Box ----------------------------->
 
-       <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box" style="background: #103cbe;">
+       <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box" style="background: #2980b9;">
            <div class="featured-image mb-3">
             <img src="http://localhost/RepositorySkripsi/Asset/img/1.png" class="img-fluid" style="width: 250px;">
            </div>
-           <p class="text-white fs-2" style="font-family: 'Courier New', Courier, monospace; font-weight: 600;">Masuk</p>
-           <small class="text-white text-wrap text-center" style="width: 17rem;font-family: 'Courier New', Courier, monospace;">Untuk melihat skiripsi.</small>
+           <!-- <p class="text-white fs-2" style="font-family: 'Courier New', Courier, monospace; font-weight: 600;">Masuk</p>
+           <small class="text-white text-wrap text-center" style="width: 17rem;font-family: 'Courier New', Courier, monospace;">Untuk melihat skiripsi.</small> -->
        </div> 
 
     <!-------------------- ------ Right Box ---------------------------->
@@ -33,28 +33,28 @@
        <div class="col-md-6 right-box">
           <div class="row align-items-center">
                 <div class="header-text mb-4">
-                     <h2>Hello,Again</h2>
+                     <h2>Hallo!</h2>
                      
                 </div>
                 <form action="<?php echo site_url('Home/login');?>" method="post">
                 <div class="input-group mb-3">
-                    <input name="username" type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Email address">
+                    <input name="username" type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Username">
                 </div>
                 <div class="input-group mb-1">
                     <input name="password" type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Password">
                 </div>
                 <?php echo $this->session->userdata("error");?>
                 <div class="input-group mb-5 d-flex justify-content-between">
-                    <div class="form-check">
+                    <!-- <div class="form-check">
                         <input type="checkbox" class="form-check-input" id="formCheck">
                         <label for="formCheck" class="form-check-label text-secondary"><small>Remember Me</small></label>
                     </div>
                     <div class="forgot">
                         <small><a href="#">Forgot Password?</a></small>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="input-group mb-3">
-                    <button class="btn btn-lg btn-primary w-100 fs-6">Login</button>
+                    <button class="btn btn-lg btn-primary w-100 fs-6">Login</button>    
                 </div>
                 </form>
                 
