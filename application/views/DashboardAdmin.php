@@ -29,7 +29,7 @@
 						<a href="<?php echo site_url('Jurnal');?>"><i class="fa fa-archive"></i> <span>Data Jurnal</span></a>
 					</li>
 					<li>
-						<a href="">
+						<a href="<?php echo site_url('Mahasiswa');?>">
 							<i class="fa fa-users"></i> <span>Mahasiswa</span>
 						</a>
 					</li>
