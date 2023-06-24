@@ -3,6 +3,7 @@ class Home extends CI_Controller {
     function index (){
         if($this->session->userdata('login')){
             $level = $this->session->userdata('level');
+            $foto = $this->session->userdata('foto');
             if ($level == "admin") {
                 $this->load->view("DashboardAdmin");
             } else if ($level == "user") {
@@ -50,7 +51,8 @@ class Home extends CI_Controller {
             $session_data = array(
                 "login" => true,
                 "username" => $this->input->post("username"),
-                "level" => $row->level
+                "level" => $row->level,
+                "foto" => $row->foto
             );
             $this->session->set_userdata($session_data);
             redirect(site_url("home"));

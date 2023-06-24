@@ -19,6 +19,7 @@ class LoginModel extends CI_Model{
         "username" => $this->input->post("username"),
         "password" => $this->input->post("password"),
         "level" => "user",
+        
         "foto" => $this->input->post("foto")
         );
         $this->db->where("id_login",$id);

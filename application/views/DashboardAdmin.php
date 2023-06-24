@@ -71,7 +71,7 @@
 								<li class="user-header">
                                 <img src="<?php echo $this->session->userdata('foto'); ?>" class="img-circle">
 									<p><?php echo $this->session->userdata('username'); ?>
-										<small>Indonesia</small>
+										<small><?php echo $this->session->userdata('level'); ?></small>
 									</p>
 								</li>
 								<li class="user-footer">

@@ -64,14 +64,14 @@
 						<!-- User Account -->
 						<li class="dropdown user user-menu">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-								<img src="<?=base_url()?>Asset/dist/img/user2-160x160.jpg" class="user-image">
+								<img src="<?php echo $this->session->userdata('foto'); ?>" class="user-image">
 								<span class="hidden-xs"><?php echo $this->session->userdata('username'); ?></span>
 							</a>
 							<ul class="dropdown-menu">
 								<li class="user-header">
                                 <img src="<?php echo $this->session->userdata('foto'); ?>" class="img-circle">
 									<p><?php echo $this->session->userdata('username'); ?>
-										<small>Indonesia</small>
+										<small><?php echo $this->session->userdata('level'); ?></small>
 									</p>
 								</li>
 								<li class="user-footer">
@@ -94,7 +94,7 @@
 			<section class="sidebar">
 				<div class="user-panel">
 					<div class="pull-left image">
-						<img src="<?=base_url()?>Asset/dist/img/user2-160x160.jpg" class="img-circle">
+						<img src="<?php echo $this->session->userdata('foto'); ?>" class="user-image">
 					</div>
 					<div class="pull-left info">
 						<p><?php echo $this->session->userdata('username'); ?></p>
