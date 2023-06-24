@@ -2,12 +2,15 @@
 class Home extends CI_Controller {
     function index (){
         if($this->session->userdata('login')){
-            $this->load->view("DashboardAdmin");
-            
-        }else{
+            $level = $this->session->userdata('level');
+            if ($level == "admin") {
+                $this->load->view("DashboardAdmin");
+            } else if ($level == "user") {
+                $this->load->view("DashboardUser");
+            }
+        } else {
             $this->load->view("login");
         }
-        
     }
     function register() {
         $this->load->view("register");
@@ -40,19 +43,22 @@ class Home extends CI_Controller {
     }
     function login(){
         $this->load->model("LoginModel");
-        if($this->LoginModel->login()->num_rows() > 0){
+        $result = $this->LoginModel->login();
+        
+        if($result->num_rows() > 0){
+            $row = $result->row();
             $session_data = array(
                 "login" => true,
-                "username" => $this->input->post("username")
+                "username" => $this->input->post("username"),
+                "level" => $row->level
             );
             $this->session->set_userdata($session_data);
             redirect(site_url("home"));
-        }else{
+        } else {
             $this->session->set_flashdata("error", "Username atau Password Salah");
             redirect(site_url("home"));
         }
     }
-    
     function logout(){
         $this->session->sess_destroy();
         redirect(base_url());
