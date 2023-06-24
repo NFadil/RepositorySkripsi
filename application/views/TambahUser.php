@@ -18,7 +18,7 @@
                         <h3 class="box-title">Masukan Username & Password</h3>
                     </div>
 
-                    <form role="form">
+                    <form action ="<?php ?>"role="form">
                         <div class="box-body">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Username</label>
