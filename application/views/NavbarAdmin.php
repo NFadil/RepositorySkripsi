@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="<?=base_url()?>Asset/bower_components/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="<?=base_url()?>Asset/dist/css/AdminLTE.min.css">
 	<link rel="stylesheet" href="<?=base_url()?>Asset/dist/css/skins/_all-skins.min.css">
+	
 
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>

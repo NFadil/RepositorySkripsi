@@ -27,9 +27,9 @@
 						</span>
 					</a>
 					<ul class="treeview-menu">
-						<li><a href="<?php echo site_url('Jurnal');?>"><i class="fa fa-circle-o"></i> Informatika</a></li>
-						<li><a href="<?php echo site_url('Jurnal');?>"><i class="fa fa-circle-o"></i> Kimia</a></li>
-						<li><a href="<?php echo site_url('Jurnal');?>"><i class="fa fa-circle-o"></i> Sistem Informasi</a></li>
+						<li><a href="<?php echo site_url('Informatika');?>"><i class="fa fa-circle-o"></i> Informatika</a></li>
+						<li><a href="<?php echo site_url('Kimia');?>"><i class="fa fa-circle-o"></i> Kimia</a></li>
+						<li><a href="<?php echo site_url('SistemInformasi');?>"><i class="fa fa-circle-o"></i> Sistem Informasi</a></li>
 					</ul>
 					</li>
 					<li>
