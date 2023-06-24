@@ -27,17 +27,11 @@
                 </tr>
             </thead>
             <tbody>
-                <?php
-                foreach ($country->result() as $row) {    
-                    $Edit = '<a class="btn btn-primary" href="'.site_url("country/update/".$row->Code).'">Edit</a>';
-                    $Hapus = '<a class="btn btn-danger" href="'.site_url("country/hapus/".$row->Code).'">Hapus</a>';
-                    echo "<tr>";
-                    echo "<td>$row->Code</td>";
-                    echo "<td>$row->Name</td>";
-                    echo "<td>".$Edit." ".$Hapus."</td>";
-                    echo "</tr>";
-                }
-                ?>
+               <tr>
+                <td>Namasd</td>
+                <td>dsd</td>
+                <td>dskajd</td>
+               </tr>
             </tbody>
         </table>
     </div>

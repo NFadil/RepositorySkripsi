@@ -42,18 +42,5 @@
 
 		<!-- Content Wrapper -->
 		<div class="content-wrapper">
-			<selection class="content-header">
-			<h1>Dashboard
-				<small>Panel</small>
-			</h1>
-			<io class="breadcrumb">
-				<li><a herf="#" ><i class="fa  fa-dashboard"></i></a></li>
-				<li class="active">Dashboard</li>
-			</io>
-			</selection>
-			<!-- Main Content -->
-			<selection class="content">
-				dashboard page
-
-			</selection>
+			
 		</div>
