@@ -23,7 +23,7 @@
 				<ul class="sidebar-menu" data-widget="tree">
 					<li class="header">MAIN NAVIGATION</li>
 					<li>
-						<a href="<?php echo site_url('City');?>"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a>
+						<a href="<?php echo site_url('Home');?>"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a>
 					</li>
 					<li>
 						<a href="<?php echo site_url('Jurnal');?>"><i class="fa fa-archive"></i> <span>Data Jurnal</span></a>
@@ -35,12 +35,9 @@
 					</li>
 				
 					<li class="header">SETTINGS</li>
-					<li><a href="#"><i class="fa fa-user"></i> <span>Admin</span></a></li>
+					<li><a href="<?php echo site_url('TambahUser'); ?>"><i class="fa fa-user"></i> <span>Tamabah User</span></a></li>
 				</ul>
 			</section>
 		</aside>
 
-		<!-- Content Wrapper
-		<div class="content-wrapper">
-			
-		</div> -->
+	
