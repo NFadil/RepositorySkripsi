@@ -41,6 +41,6 @@
 		</aside>
 
 		<!-- Content Wrapper -->
-		<div class="content-wrapper">
+		<!-- <div class="content-wrapper">
 			
-		</div>
+		</div> -->

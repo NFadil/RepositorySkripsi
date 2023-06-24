@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="<?=base_url()?>Asset/bower_components/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="<?=base_url()?>Asset/dist/css/AdminLTE.min.css">
 	<link rel="stylesheet" href="<?=base_url()?>Asset/dist/css/skins/_all-skins.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>

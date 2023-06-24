@@ -1,10 +1,7 @@
-<Head>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
-</Head>
+
 <!-- Content Wrapper -->
 <div class="content-wrapper">
-	<selection class="content-header">
+	<!-- <selection class="content-header">
 		<h1>Dashboard
 			<small>Panel</small>
 		</h1>
@@ -12,7 +9,7 @@
 				<li><a herf="#" ><i class="fa  fa-dashboard"></i></a></li>
 				<li class="active">Dashboard</li>
 			</io>
-	</selection>
+	</selection> -->
 <!-- Main Content -->
 <selection class="content">
     <div class="container">
