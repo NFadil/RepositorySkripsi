@@ -7,9 +7,11 @@ class Home extends CI_Controller {
             if ($level == "admin") {
                 $this->load->view("NavbarAdmin");
                 $this->load->view("DashboardAdmin");
+                $this->load->view("Footer");
             } else if ($level == "user") {
                 $this->load->view("NavbarUser");
                 $this->load->view("DashboardUser");
+                $this->load->view("Footer");
             }
         } else {
             $this->load->view("login");
