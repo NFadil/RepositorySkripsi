@@ -18,19 +18,19 @@
                         <h3 class="box-title">Masukan Username & Password</h3>
                     </div>
 
-                    <form action ="<?php ?>"role="form">
+                    <form action ="<?php echo site_url('Home/prosesdaftar') ?>"method="post" enctype="multipart/form-data">
                         <div class="box-body">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Username</label>
+                                <label for="username">Username</label>
                                 <input type="text" class="form-control" name="username" id="exampleInputEmail1" placeholder="Enter Username">
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Password</label>
+                                <label for="password">Password</label>
                                 <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password">
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputFile">File input</label>
-                                <input name="gamabar" type="file" id="exampleInputFile">
+                                <label for="gambar">File input</label>
+                                <input name="gambar"  class="form-control" type="file" id="exampleInputFile">
                                 
                             </div>
                             

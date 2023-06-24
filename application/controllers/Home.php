@@ -18,9 +18,7 @@ class Home extends CI_Controller {
             $this->load->view("login");
         }
     }
-    function register() {
-        $this->load->view("register");
-    }
+   
     function prosesdaftar(){
         $this->load->model("LoginModel","",TRUE);
         $user = array(
@@ -31,9 +29,7 @@ class Home extends CI_Controller {
             
         $config['upload_path'] = './Asset/img';
         $config['allowed_types'] = 'gif|jpg|png';
-        // $config['max_size'] = 100;
-        // $config['max_width'] = 1024;
-        // $config['max_height'] = 768;
+        
         $this->load->library('upload', $config);
         if (!$this->upload->do_upload('gambar')) {
             echo $this->upload->display_errors();exit;
@@ -44,7 +40,7 @@ class Home extends CI_Controller {
         if($this->LoginModel->insertLogin($user)){
             redirect(site_url("Home"));
         }else{
-            redirect(site_url("Home/register"));
+            redirect(site_url("TambahUser"));
         }
     }
     function login(){
