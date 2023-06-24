@@ -40,7 +40,7 @@
 			</section>
 		</aside>
 
-		<!-- Content Wrapper -->
-		<!-- <div class="content-wrapper">
+		<!-- Content Wrapper
+		<div class="content-wrapper">
 			
 		</div> -->
