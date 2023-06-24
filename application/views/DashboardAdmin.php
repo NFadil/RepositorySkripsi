@@ -26,7 +26,7 @@
 						<a href="<?php echo site_url('City');?>"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a>
 					</li>
 					<li>
-						<a href="<?php echo site_url('Admin');?>"><i class="fa fa-archive"></i> <span>Data Jurnal</span></a>
+						<a href="<?php echo site_url('Jurnal');?>"><i class="fa fa-archive"></i> <span>Data Jurnal</span></a>
 					</li>
 					<li>
 						<a href="">
