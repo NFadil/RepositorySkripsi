@@ -1,7 +1,7 @@
 <div class="content-wrapper">
     <section class="content-header">
         <h1>
-            Tambah Skripsi
+            Update Skripsi
             <small>Informatika</small>
         </h1>
         <ol class="breadcrumb">

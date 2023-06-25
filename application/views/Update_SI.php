@@ -1,13 +1,13 @@
 <div class="content-wrapper">
     <section class="content-header">
         <h1>
-            Tambah Skripsi
-            <small>Informatika</small>
+            Update Skripsi
+            <small>Sistem Informasi</small>
         </h1>
         <ol class="breadcrumb">
             <li><a href="<?php echo site_url('Home');?>"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a href="<?php echo site_url('Informatika');?>"><i class="fa fa-archive"></i> Informatika</a></li>
-            <li class="active">Tambah Skripsi</li>
+            <li><a href="<?php echo site_url('SistemInformasi');?>"><i class="fa fa-archive"></i> Sistem Informasi</a></li>
+            <li class="active">Update Skripsi</li>
         </ol>
     </section>
 
@@ -18,32 +18,31 @@
                     <div class="box-header with-border">
                         <h3 class="box-title">Masukan Data</h3>
                     </div>
-
-                    <form action ="<?php echo site_url('Informatika/prosesTambah') ?>"method="post" enctype="multipart/form-data">
+                    <form action ="<?php echo site_url('SistemInformasi/prosesUpdate/'.$sisteminformasi->id_jurnal) ?>" method="post" enctype="multipart/form-data">
                         <div class="box-body">
                             <div class="form-group">
                                 <label for="Nama">Nama</label>
-                                <input type="text" class="form-control" name="Nama" id="exampleInputEmail1" placeholder="Masukan Nama" required>
+                                <input type="text" class="form-control" name="Nama" id="exampleInputEmail1" placeholder="Masukan Nama" required value="<?php echo $sisteminformasi->nama; ?>">
                             </div>
                             <div class="form-group">
                                 <label for="Judul">Judul</label>
-                                <input type="text" class="form-control" name="Judul" id="exampleInputEmail1" placeholder="Masukan Judul" required>
+                                <input type="text" class="form-control" name="Judul" id="exampleInputEmail1" placeholder="Masukan Judul" required value="<?php echo $sisteminformasi->judul; ?>">
                             </div>
                             <div class="form-group">
                                 <label for="Jurusan">Jurusan</label>
-                                <input type="text" class="form-control" name="Jurusan" id="exampleInputEmail1" placeholder="Masukan Jurusan" required>
+                                <input type="text" class="form-control" name="Jurusan" id="exampleInputEmail1" placeholder="Masukan Jurusan" required value="<?php echo $sisteminformasi->jurusan; ?>">
                             </div>
                             <div class="form-group">
                                 <label for="Angkatan">Angkatan</label>
-                                <input type="number" class="form-control" name="Angkatan" id="exampleInputEmail1" placeholder="Masukan Angkatan" required>
+                                <input type="number" class="form-control" name="Angkatan" id="exampleInputEmail1" placeholder="Masukan Angkatan" required value="<?php echo $sisteminformasi->angkatan; ?>">
                             </div>
                             <div class="form-group">
                                 <label for="Tahunpublish">Tahun Publish</label>
-                                <input type="number" class="form-control" name="Tahunpublish" id="exampleInputEmail1" placeholder="Masukan Tahun Publish" required>
+                                <input type="number" class="form-control" name="Tahunpublish" id="exampleInputEmail1" placeholder="Masukan Tahun Publish" required value="<?php echo $sisteminformasi->tahun_publis; ?>">
                             </div>
                             <div class="form-group">
                                 <label for="Url">File input</label>
-                                <input name="Url"  class="form-control" type="file" id="exampleInputFile"  required>
+                                <input name="Url"  class="form-control" type="file" id="exampleInputFile" required value="<?php echo $sisteminformasi->url; ?>">
                                 
                             </div>
                             

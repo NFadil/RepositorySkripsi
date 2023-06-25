@@ -25,11 +25,15 @@ class Kimia extends CI_Controller {
 
     public function tambah() {
         $data['kimia'] = $this->KimiaModel->getKimia();
-        $this->load->view("Tambah_If", $data);
+        $this->load->view("NavbarAdmin");
+        $this->load->view("DashboardAdmin");
+        $this->load->view("Tambah_Kimia", $data);
+        $this->load->view("Footer");
     }
 
     public function prosesTambah() {
         if ($this->KimiaModel->insertKimia()) {
+            
             redirect(site_url("kimia"));
         } else {
             redirect(site_url("kimia/tambah"));
@@ -38,7 +42,10 @@ class Kimia extends CI_Controller {
 
     public function update($id) {
         $data['kimia'] = $this->KimiaModel->getKimiaById($id)->row();
-        $this->load->view("Kimia_Update", $data);
+        $this->load->view("NavbarAdmin");
+        $this->load->view("DashboardAdmin");
+        $this->load->view("Update_Kimia", $data);
+        $this->load->view("Footer");
     }
 
     public function prosesUpdate($id) {

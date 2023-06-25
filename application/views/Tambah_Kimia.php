@@ -2,11 +2,11 @@
     <section class="content-header">
         <h1>
             Tambah Skripsi
-            <small>Informatika</small>
+            <small>Kimia</small>
         </h1>
         <ol class="breadcrumb">
             <li><a href="<?php echo site_url('Home');?>"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a href="<?php echo site_url('Informatika');?>"><i class="fa fa-archive"></i> Informatika</a></li>
+            <li><a href="<?php echo site_url('Kimia');?>"><i class="fa fa-archive"></i> Kimia</a></li>
             <li class="active">Tambah Skripsi</li>
         </ol>
     </section>
@@ -19,7 +19,7 @@
                         <h3 class="box-title">Masukan Data</h3>
                     </div>
 
-                    <form action ="<?php echo site_url('Informatika/prosesTambah') ?>"method="post" enctype="multipart/form-data">
+                    <form action ="<?php echo site_url('Kimia/prosesTambah') ?>"method="post" enctype="multipart/form-data">
                         <div class="box-body">
                             <div class="form-group">
                                 <label for="Nama">Nama</label>

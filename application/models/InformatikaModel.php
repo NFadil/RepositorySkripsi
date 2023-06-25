@@ -3,6 +3,9 @@ class InformatikaModel extends CI_Model{
     function getInformatika(){
         return $this->db->get('informatika');
     }
+    function totalDataIF() {
+        return $this->db->count_all('informatika');
+    }    
     public function insertInformatika() {
         $informatika = array(
             "nama" => $this->input->post("Nama"),

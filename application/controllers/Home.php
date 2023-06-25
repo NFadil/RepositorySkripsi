@@ -7,7 +7,13 @@ class Home extends CI_Controller {
             if ($level == "admin") {
                 $this->load->view("NavbarAdmin");
                 $this->load->view("DashboardAdmin");
-                $this->load->view("content");
+                $this->load->model('InformatikaModel');
+                $this->load->model('KimiaModel');
+                $this->load->model('SIModel');
+                $data['informatika'] = $this->InformatikaModel->totalDataIF();
+                $data['kimia'] = $this->KimiaModel->totalDataKimia();
+                $data['sisteminformasi'] = $this->SIModel->totalDataSI();
+                $this->load->view("content",$data);
                 $this->load->view("Footer");
             } else if ($level == "user") {
                 $this->load->view("NavbarUser");

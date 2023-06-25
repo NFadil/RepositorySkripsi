@@ -11,41 +11,67 @@
             <li class="active">Dashboard</li>
         </ol>
     </section>
+    <br>
 
-    <!-- Main content -->
-    <section class="content">
-        <!-- Info boxes -->
-        <div class="row">
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="info-box">
-                    <span class="info-box-icon bg-aqua"><i class="fa fa-archive"></i></span>
-
-                    <div class="info-box-content">
-                        <span class="info-box-text">Jumlah Jurnal</span>
-                        <span class="info-box-number">90</span>
-                    </div>
-                    <!-- /.info-box-content -->
+    <div class="row">
+        <div class="col-lg-3 col-xs-6">
+            <div class="small-box bg-aqua">
+                <div class="inner">
+                    <h3><?php echo $kimia; ?></h3>
+                    <p>Jurnal Kimia</p>
                 </div>
-                <!-- /.info-box -->
-            </div>
-            <!-- /.col -->
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="info-box">
-                    <span class="info-box-icon bg-red"><i class="fa fa-users"></i></span>
-
-                    <div class="info-box-content">
-                        <span class="info-box-text">Mahasiswa</span>
-                        <span class="info-box-number">41,410</span>
-                    </div>
-                    <!-- /.info-box-content -->
+                <div class="icon">
+                    <i class="fa fa-archive"></i>
                 </div>
-                <!-- /.info-box -->
+                <a href="<?php echo site_url('Kimia'); ?>" class="small-box-footer">
+                    More info <i class="fa fa-arrow-circle-right"></i>
+                </a>
             </div>
-            <!-- /.col -->
-
-            <!-- fix for small devices only -->
-            <div class="clearfix visible-sm-block"></div>
         </div>
-        <!-- /.row -->
-    </section>
+
+        <div class="col-lg-3 col-xs-6">
+            <div class="small-box bg-green">
+                <div class="inner">
+                    <h3><?php echo $sisteminformasi; ?></h3>
+                    <p>Jurnal Sistem Informasi</p>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-archive"></i>
+                </div>
+                <a href="<?php echo site_url('SistemInformasi'); ?>" class="small-box-footer">
+                    More info <i class="fa fa-arrow-circle-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-xs-6">
+            <div class="small-box bg-yellow">
+                <div class="inner">
+                    <h3><?php echo $informatika; ?></h3>
+                    <p>Jurnal Informatika</p>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-archive"></i>
+                </div>
+                <a href="<?php echo site_url('Informatika'); ?>" class="small-box-footer">
+                    More info <i class="fa fa-arrow-circle-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-xs-6">
+            <div class="small-box bg-red">
+                <div class="inner">
+                    <h3>0</h3>
+                    <p>Jumlah User</p>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-users"></i>
+                </div>
+                <a href="<?php echo site_url('Mahasiswa'); ?>" class="small-box-footer">
+                    More info <i class="fa fa-arrow-circle-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
 </div>

@@ -23,7 +23,7 @@
           <div class="box">
             <div class="box-header">
             <br>
-              <a href="<?php echo site_url('Country/tambah');?>" class="btn btn-primary mb-3">Tambah Skripsi</a>
+              <a href="<?php echo site_url('Kimia/tambah');?>" class="btn btn-primary mb-3">Tambah Skripsi</a>
             </div>
 
             <div class="box-body">
