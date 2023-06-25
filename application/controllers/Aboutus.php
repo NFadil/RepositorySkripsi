@@ -16,6 +16,7 @@ class Aboutus extends CI_Controller{
         }
         
     }
+
     function Kukuh(){
         if($this->session->userdata('login')){
             $level = $this->session->userdata('level');
@@ -31,8 +32,18 @@ class Aboutus extends CI_Controller{
         }
         
     }
-        
-        
-        
+
+    function Alfin(){
+        if($this->session->userdata('login')){
+            $level = $this->session->userdata('level');
+            $foto = $this->session->userdata('foto');
+            $this->load->view("NavbarUser");
+            $this->load->view("DashboardUser");
+            $this->load->view('Alfin');
+            $this->load->view("Footer");
+        }else{
+            $this->load->view("login");
+        } 
+    }        
 }
 ?>
