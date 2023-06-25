@@ -33,8 +33,8 @@
 					</ul>
 					</li>
 					<li>
-						<a href="<?php echo site_url('Mahasiswa');?>">
-							<i class="fa fa-users"></i> <span>Mahasiswa</span>
+						<a href="<?php echo site_url('User');?>">
+							<i class="fa fa-users"></i> <span>User</span>
 						</a>
 					</li>
 				

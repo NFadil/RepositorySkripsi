@@ -10,9 +10,11 @@ class Home extends CI_Controller {
                 $this->load->model('InformatikaModel');
                 $this->load->model('KimiaModel');
                 $this->load->model('SIModel');
+                $this->load->model('LoginModel');
                 $data['informatika'] = $this->InformatikaModel->totalDataIF();
                 $data['kimia'] = $this->KimiaModel->totalDataKimia();
                 $data['sisteminformasi'] = $this->SIModel->totalDataSI();
+                $data['login'] = $this->LoginModel->totalDataLogin();
                 $this->load->view("content",$data);
                 $this->load->view("Footer");
             } else if ($level == "user") {
