@@ -22,6 +22,23 @@ class Informatika extends CI_Controller {
         }
         
     }
+    public function User() {
+        if($this->session->userdata('login')){
+            $level = $this->session->userdata('level');
+            $foto = $this->session->userdata('foto');
+            $this->load->model('InformatikaModel');
+            $data['informatika'] = $this->InformatikaModel->getInformatika();
+            $this->load->view("NavbarAdmin");
+            $this->load->view("DashboardAdmin");
+            $this->load->view("IF_user", $data);
+            $this->load->view("Footer");
+           
+    
+        }else{
+            $this->load->view("login");
+        }
+        
+    }
 
     public function tambah() {
         $data['informatika'] = $this->InformatikaModel->getinformatika();

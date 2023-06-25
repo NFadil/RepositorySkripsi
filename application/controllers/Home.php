@@ -20,6 +20,15 @@ class Home extends CI_Controller {
             } else if ($level == "user") {
                 $this->load->view("NavbarUser");
                 $this->load->view("DashboardUser");
+                $this->load->model('InformatikaModel');
+                $this->load->model('KimiaModel');
+                $this->load->model('SIModel');
+                $this->load->model('LoginModel');
+                $data['informatika'] = $this->InformatikaModel->totalDataIF();
+                $data['kimia'] = $this->KimiaModel->totalDataKimia();
+                $data['sisteminformasi'] = $this->SIModel->totalDataSI();
+                $data['login'] = $this->LoginModel->totalDataLogin();
+                $this->load->view("contentuser",$data);
                 $this->load->view("Footer");
             }
         } else {
