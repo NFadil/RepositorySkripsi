@@ -25,20 +25,26 @@ class Informatika extends CI_Controller {
 
     public function tambah() {
         $data['informatika'] = $this->InformatikaModel->getinformatika();
+        $this->load->view("NavbarAdmin");
+        $this->load->view("DashboardAdmin");
         $this->load->view("Tambah_If", $data);
+        $this->load->view("Footer");
     }
 
     public function prosesTambah() {
         if ($this->InformatikaModel->insertinformatika()) {
-            redirect(site_url("informatika"));
+            redirect(site_url("Informatika"));
         } else {
-            redirect(site_url("informatika/tambah"));
+            redirect(site_url("Informatika/tambah"));
         }
     }
 
     public function update($id) {
         $data['informatika'] = $this->InformatikaModel->getInformatikaById($id)->row();
-        $this->load->view("Informatika_Update", $data);
+        $this->load->view("NavbarAdmin");
+        $this->load->view("DashboardAdmin");
+        $this->load->view("Update_if", $data);
+        $this->load->view("Footer");
     }
 
     public function prosesUpdate($id) {

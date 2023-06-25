@@ -22,7 +22,8 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Skripsi Sistem Informasi</h3>
+            <br>
+              <a href="<?php echo site_url('Country/tambah');?>" class="btn btn-primary mb-3">Tambah Skripsi</a>
             </div>
 
             <div class="box-body">
@@ -51,7 +52,7 @@
                         echo "<td>".$row->jurusan."</td>";
                         echo "<td>".$row->angkatan."</td>";
                         echo "<td>".$row->tahun_publis."</td>";
-                        echo "<td>".$row->url."</td>";
+                        echo "<td><iframe src='".$row->url."' width='100px' height='100px'></iframe></td>";
                         echo "<td>".$edit." ".$hapus."</td>";
                         echo "</tr>";
                     }
