@@ -10,7 +10,15 @@ class Profile extends CI_Controller {
         $this->load->view("DashboardAdmin");
         $this->load->model('LoginModel');
         $data['login'] = $this->LoginModel->getLogin();
+        // $data2['login'] = $this->LoginModel->getLoginById($id)->row();
         $this->load->view("Profile",$data);
+        $this->load->view("Footer");
+    }
+    public function update($id) {
+        $data['login'] = $this->LoginModel->getLoginById($id)->row();
+        $this->load->view("NavbarAdmin");
+        $this->load->view("DashboardAdmin");
+        $this->load->view("Update_profile", $data);
         $this->load->view("Footer");
     }
     public function prosesUpdate($id) {
