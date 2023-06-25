@@ -18,7 +18,7 @@
                     <div class="box-header with-border">
                         <h3 class="box-title">Masukan Data</h3>
                     </div>
-                    <form action ="<?php echo site_url('Informatika/prosesUpdate'.$informatika->id_jurnal) ?>"method="post" enctype="multipart/form-data">
+                    <form action ="<?php echo site_url('Informatika/prosesUpdate/'.$informatika->id_jurnal) ?>" method="post" enctype="multipart/form-data">
                         <div class="box-body">
                             <div class="form-group">
                                 <label for="Nama">Nama</label>
@@ -42,7 +42,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="Url">File input</label>
-                                <input name="Url"  class="form-control" type="file" id="exampleInputFile" value="<?php echo $informatika->url; ?>">
+                                <input name="Url"  class="form-control" type="file" id="exampleInputFile" required value="<?php echo $informatika->url; ?>">
                                 
                             </div>
                             

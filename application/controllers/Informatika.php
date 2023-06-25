@@ -49,9 +49,9 @@ class Informatika extends CI_Controller {
 
     public function prosesUpdate($id) {
         if ($this->InformatikaModel->updateInformatika($id)) {
-            redirect(site_url("informatika"));
+            redirect(site_url("Informatika"));
         } else {
-            redirect(site_url("informatika/update/$id"));
+            redirect(site_url("Informatika/update/$id"));
         }
     }
 

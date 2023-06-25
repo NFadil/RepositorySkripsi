@@ -55,7 +55,7 @@ class InformatikaModel extends CI_Model{
             $informatika['url'] = base_url("Asset/doc/") . $upload_data['file_name'];    
         }
         $this->db->where("id_jurnal",$id);
-        return $this->db->update("informatika",$informatika);
+        return $this->db->update("Informatika",$informatika);
     }
     function deleteInformatika($id){
         $this->db->where("id_jurnal",$id);
