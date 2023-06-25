@@ -1,20 +1,28 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-require 'vendor/aotoload.php';
-
 use chriskacerguis\RestServer\RestController;
+class login extends RestController {
 
-class Login extends RestController {
+    function __construct()
+    {
+        // Construct the parent class
+        parent::__construct();
+    }
 
-    // function __construct()
-    // {
-    //     // Construct the parent class
-    //     parent::__construct();
-    // }
+    public function index_get($id = 0){
+        $chek_data = $this->db->get_where('login',['id_login'=> $id])->row_array();
 
-    public function index_get(){
-        $data = $this->db->get('login')->result();
+        if($id){
+            if($chek_data){
+                $data = $this->db->get_where('login',['id_login'=> $id])->row_array();
+                $this->response($data,RestController::HTTP_OK);
+            }else{
+            $this->respone(['status' => false,'massage'=>'Data Tidak temukan'],404);
+            }
+        }else{
+            $data = $this->db->get('login')->result();
 
-        $this->response($data,RestController::HTTP_OK);
+            $this->response($data,RestController::HTTP_OK);
+        }
     }
 }
