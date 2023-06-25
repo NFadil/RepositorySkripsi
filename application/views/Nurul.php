@@ -2,12 +2,12 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Dashboard
-            <small>Skripsi</small>
+            About Us
+            <small>Fadil </small>
         </h1>
         <ol class="breadcrumb">
             <li><a href="<?php echo site_url('Home');?>"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Dashboard</li>
+            <li class="active">About Us</li>
         </ol>
     </section>
     <br>
@@ -18,19 +18,7 @@
       background-size: 400% 400%;
       animation: gradient 10s ease infinite;
     }
-    
-    /* Animasi latar belakang berwarna bergerak */
-    @keyframes gradient {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
-    }
+
     .white-box {
             background-color: white;
             padding: 20px;
@@ -69,7 +57,9 @@
             <p>Graduation Year: 2024 Amin</p>
         </ul>
       </div>
+      <br>
     </div>
 
-</section>
+
+</div>
 </div>
