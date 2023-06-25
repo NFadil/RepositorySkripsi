@@ -39,7 +39,7 @@
 					</li>
 				
 					<li class="header">SETTINGS</li>
-					<li><a href="<?php echo site_url('TambahUser'); ?>"><i class="fa fa-user"></i> <span>Tamabah User</span></a></li>
+					<li><a href="<?php echo site_url('TambahUser'); ?>"><i class="fa fa-user"></i> <span>Tambah User</span></a></li>
 				</ul>
 			</section>
 		</aside>
