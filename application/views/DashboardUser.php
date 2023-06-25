@@ -50,7 +50,7 @@
 						</span>
 					</a>
 					<ul class="treeview-menu">
-						<li><a href="<?php echo site_url('Informatika/User');?>"><i class="fa fa-circle-o"></i>Nurul Fadhilah Anwar</a></li>
+						<li><a href="<?php echo site_url('Aboutus/Nurul');?>"><i class="fa fa-circle-o"></i>Nurul Fadhilah Anwar</a></li>
 						<li><a href="<?php echo site_url('Kimia/User');?>"><i class="fa fa-circle-o"></i> Kukuh Yulion S</a></li>
 						<li><a href="<?php echo site_url('SistemInformasi/User');?>"><i class="fa fa-circle-o"></i> Adhani Mulyanti</a></li>
 						<li><a href="<?php echo site_url('SistemInformasi/User');?>"><i class="fa fa-circle-o"></i> Alfin Gerlian Deva</a></li>
