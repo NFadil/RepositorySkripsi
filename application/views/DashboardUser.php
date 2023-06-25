@@ -35,18 +35,26 @@
 					</a>
 					<ul class="treeview-menu">
 						<li><a href="<?php echo site_url('Informatika/User');?>"><i class="fa fa-circle-o"></i> Informatika</a></li>
-						<li><a href="<?php echo site_url('Kimia');?>"><i class="fa fa-circle-o"></i> Kimia</a></li>
-						<li><a href="<?php echo site_url('SistemInformasi');?>"><i class="fa fa-circle-o"></i> Sistem Informasi</a></li>
+						<li><a href="<?php echo site_url('Kimia/User');?>"><i class="fa fa-circle-o"></i> Kimia</a></li>
+						<li><a href="<?php echo site_url('SistemInformasi/User');?>"><i class="fa fa-circle-o"></i> Sistem Informasi</a></li>
 					</ul>
 					</li>
-					<li>
-						<a href="<?php echo site_url('User');?>">
-							<i class="fa fa-users"></i> <span>User</span>
-						</a>
-					</li>
 				
-					<li class="header">SETTINGS</li>
-					<li><a href="<?php echo site_url('TambahUser'); ?>"><i class="fa fa-user"></i> <span>Tamabah User</span></a></li>
-				</ul>
+					<li class="header">ABOUT US</li>
+					<li class="treeview">
+					<a href="#">
+						<i class="fa fa-users"></i>
+						<span>Kelompok</span>
+						<span class="pull-right-container">
+						<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="<?php echo site_url('Informatika/User');?>"><i class="fa fa-circle-o"></i>Nurul Fadhilah Anwar</a></li>
+						<li><a href="<?php echo site_url('Kimia/User');?>"><i class="fa fa-circle-o"></i> Kukuh Yulion S</a></li>
+						<li><a href="<?php echo site_url('SistemInformasi/User');?>"><i class="fa fa-circle-o"></i> Adhani Mulyanti</a></li>
+						<li><a href="<?php echo site_url('SistemInformasi/User');?>"><i class="fa fa-circle-o"></i> Alfin Gerlian Deva</a></li>
+					</ul>
+					</li>
 			</section>
 		</aside>

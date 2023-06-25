@@ -22,6 +22,23 @@ class Kimia extends CI_Controller {
         }
         
     }
+    public function User() {
+        if($this->session->userdata('login')){
+            $level = $this->session->userdata('level');
+            $foto = $this->session->userdata('foto');
+            $this->load->model('KimiaModel');
+            $data['kimia'] = $this->KimiaModel->getKimia();
+            $this->load->view("NavbarUser");
+            $this->load->view("DashboardUser");
+            $this->load->view("Kimia_user", $data);
+            $this->load->view("Footer");
+           
+    
+        }else{
+            $this->load->view("login");
+        }
+        
+    }
 
     public function tambah() {
         $data['kimia'] = $this->KimiaModel->getKimia();

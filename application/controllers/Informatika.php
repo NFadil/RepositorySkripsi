@@ -28,8 +28,8 @@ class Informatika extends CI_Controller {
             $foto = $this->session->userdata('foto');
             $this->load->model('InformatikaModel');
             $data['informatika'] = $this->InformatikaModel->getInformatika();
-            $this->load->view("NavbarAdmin");
-            $this->load->view("DashboardAdmin");
+            $this->load->view("NavbarUser");
+            $this->load->view("DashboardUser");
             $this->load->view("IF_user", $data);
             $this->load->view("Footer");
            

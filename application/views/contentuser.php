@@ -1,4 +1,3 @@
-<!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
@@ -53,13 +52,10 @@
                 <div class="icon">
                     <i class="fa fa-archive"></i>
                 </div>
-                <a href="<?php echo site_url('Informatika'); ?>" class="small-box-footer">
+                <a href="<?php echo site_url('Informatika/User'); ?>" class="small-box-footer">
                     More info <i class="fa fa-arrow-circle-right"></i>
                 </a>
             </div>
-        </div>
-
-        
         </div>
     </div>
 </div>

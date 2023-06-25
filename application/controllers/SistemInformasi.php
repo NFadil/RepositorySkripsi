@@ -22,6 +22,23 @@ class SistemInformasi extends CI_Controller {
         }
         
     }
+    public function User() {
+        if($this->session->userdata('login')){
+            $level = $this->session->userdata('level');
+            $foto = $this->session->userdata('foto');
+            $this->load->model('SIModel');
+            $data['sisteminformasi'] = $this->SIModel->getSI();
+            $this->load->view("NavbarUser");
+            $this->load->view("DashboardUser");
+            $this->load->view("SI_user", $data);
+            $this->load->view("Footer");
+           
+    
+        }else{
+            $this->load->view("login");
+        }
+        
+    }
     public function tambah() {
         $data['sisteminformasi'] = $this->SIModel->getSI();
         $this->load->view("NavbarAdmin");
