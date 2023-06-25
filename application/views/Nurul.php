@@ -18,19 +18,7 @@
       background-size: 400% 400%;
       animation: gradient 10s ease infinite;
     }
-    
-    /* Animasi latar belakang berwarna bergerak */
-    @keyframes gradient {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
-    }
+
     .white-box {
             background-color: white;
             padding: 20px;
@@ -69,7 +57,9 @@
             <p>Graduation Year: 2024 Amin</p>
         </ul>
       </div>
+      <br>
     </div>
 
-</section>
+
+</div>
 </div>
