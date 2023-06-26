@@ -34,7 +34,7 @@
                     <th>Nama</th>
                     <th>Judul(s)</th>
                     <th>Jurusan</th>
-                    <th>Angakatan</th>
+                    <th>Angkatan</th>
                     <th>Tahun Publish</th>
                     <th>Dokumen</th>
                     <th>Aksi</th>
