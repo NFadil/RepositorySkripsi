@@ -20,35 +20,34 @@ class LoginModel extends CI_Model{
         $this->db->where("id_login",$id);
         return $this->db->get('login');
     }
-    function updateLoginUser($user){
-        $user = array(
-        "username" => $this->input->post("username"),
-        "password" => $this->input->post("password"),
-        "level" => "user"
-        );
-        $config['upload_path'] = './Asset/img';
-        $config['allowed_types'] = 'gif|jpg|png';
-        
-        $this->load->library('upload', $config);
-        if (!$this->upload->do_upload('gambar')) {
-            echo $this->upload->display_errors();exit;
-        } else {
-            $upload_data = $this->upload->data();
-            $user['foto'] = base_url("Asset/img/").$upload_data['file_name'];    
-        }
-        if($this->LoginModel->insertLogin($user)){
-            redirect(site_url("Profile"));
-        }else{
-            redirect(site_url("Profile"));
-        }
-        $this->db->where("id_login",$id);
-        return $this->db->update("login",$user);
-    }
-    function updateLoginAdmin($id){
-        $user = array(
+    function updateLoginUser($id){
+        $login = array(
             "username" => $this->input->post("username"),
             "password" => $this->input->post("password"),
             "level" => "user"
+            );
+            $config['upload_path'] = './Asset/img';
+            $config['allowed_types'] = 'gif|jpg|png';
+            
+            $this->load->library('upload', $config);
+            
+            if (!$this->upload->do_upload('gambar')) {
+                $error = $this->upload->display_errors();
+                echo $error;
+                exit;
+            } else {
+                $upload_data = $this->upload->data();
+                $login['foto'] = base_url("Asset/img/") . $upload_data['file_name'];    
+            }
+            
+            $this->db->where("id_login",$id);
+            return $this->db->update("login",$login);
+        }
+    function updateLoginAdmin($id){
+        $login = array(
+            "username" => $this->input->post("username"),
+            "password" => $this->input->post("password"),
+            "level" => "admin"
             );
             $config['upload_path'] = './Asset/img';
             $config['allowed_types'] = 'gif|jpg|png';
