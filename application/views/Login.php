@@ -22,7 +22,7 @@
 
        <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box" style="background: #2980b9;">
            <div class="featured-image mb-3">
-            <img src="http://localhost/RepositorySkripsi/Asset/img/1.png" class="img-fluid" style="width: 250px;">
+            <img src="http://localhost/RepositorySkripsi/Asset/img/2.png" class="img-fluid" style="width: 250px;">
            </div>
            <!-- <p class="text-white fs-2" style="font-family: 'Courier New', Courier, monospace; font-weight: 600;">Masuk</p>
            <small class="text-white text-wrap text-center" style="width: 17rem;font-family: 'Courier New', Courier, monospace;">Untuk melihat skiripsi.</small> -->
@@ -33,7 +33,7 @@
        <div class="col-md-6 right-box">
           <div class="row align-items-center">
                 <div class="header-text mb-4">
-                     <h2>Hallo!</h2>
+                     <h2>Welcome!</h2>
                      
                 </div>
                 <form action="<?php echo site_url('Home/login');?>" method="post">
