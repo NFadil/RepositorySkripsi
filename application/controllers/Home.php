@@ -75,7 +75,7 @@ class Home extends CI_Controller {
             $this->session->set_userdata($session_data);
             redirect(site_url("home"));
         } else {
-            $this->session->set_flashdata("error", "Username atau Password Salah");
+            $this->session->set_flashdata("error", "Username atau Password Salah!");
             redirect(site_url("home"));
         }
     }

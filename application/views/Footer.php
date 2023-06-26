@@ -3,7 +3,7 @@
 			<div class="pull-right hidden-xs">
 				<b>Version</b> 1.0
 			</div>
-			<strong>Copyright &copy; Repository <a href="https://www.instagram.com/_fadil.wr/">Skripsi</a>.</strong> All rights reserved.
+			<strong>Copyright &copy; Repository <a href="https://www.unjani.ac.id/">Skripsi</a>.</strong> All rights reserved.
 		</footer>
 
 	</div>

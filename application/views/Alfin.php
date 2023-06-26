@@ -3,7 +3,7 @@
     <section class="content-header">
         <h1>
             About Us
-            <small>Alfin Gerliandeva</small>
+            <br><small>Alfin Gerliandeva</small>
         </h1>
         <ol class="breadcrumb">
             <li><a href="<?php echo site_url('Home');?>"><i class="fa fa-dashboard"></i> Home</a></li>

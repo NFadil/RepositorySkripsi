@@ -52,7 +52,7 @@
 					<ul class="treeview-menu">
 						<li><a href="<?php echo site_url('Aboutus/Nurul');?>"><i class="fa fa-circle-o"></i>Nurul Fadhilah Anwar</a></li>
 						<li><a href="<?php echo site_url('Aboutus/Kukuh');?>"><i class="fa fa-circle-o"></i> Kukuh Yulion S</a></li>
-						<li><a href="<?php echo site_url('SistemInformasi/User');?>"><i class="fa fa-circle-o"></i> Adhani Mulanti</a></li>
+						<li><a href="<?php echo site_url('Aboutus/Adhani');?>"><i class="fa fa-circle-o"></i> Adhani Mulanti</a></li>
 						<li><a href="<?php echo site_url('Aboutus/Alfin');?>"><i class="fa fa-circle-o"></i> Alfin Gerliandeva</a></li>
 					</ul>
 					</li>
