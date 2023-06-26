@@ -17,7 +17,7 @@
             <div class="small-box bg-aqua">
                 <div class="inner">
                     <h3><?php echo $kimia; ?></h3>
-                    <p>Jurnal Kimia</p>
+                    <p>Skripsi Kimia</p>
                 </div>
                 <div class="icon">
                     <i class="fa fa-archive"></i>
@@ -32,7 +32,7 @@
             <div class="small-box bg-green">
                 <div class="inner">
                     <h3><?php echo $sisteminformasi; ?></h3>
-                    <p>Jurnal Sistem Informasi</p>
+                    <p>Skripsi Sistem Informasi</p>
                 </div>
                 <div class="icon">
                     <i class="fa fa-archive"></i>
@@ -47,7 +47,7 @@
             <div class="small-box bg-yellow">
                 <div class="inner">
                     <h3><?php echo $informatika; ?></h3>
-                    <p>Jurnal Informatika</p>
+                    <p>Skripsi Informatika</p>
                 </div>
                 <div class="icon">
                     <i class="fa fa-archive"></i>

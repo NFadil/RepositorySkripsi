@@ -21,8 +21,8 @@
 	<div class="wrapper">
 		<header class="main-header">
 			<a href="<?php echo site_url('Home');?>" class="logo">
-				<span class="logo-mini">S</span>
-				<span class="logo-lg">Repository<b>Skripsi</b></span>
+				<span class="logo-mini">A<b>S</b></span>
+				<span class="logo-lg">Archive<b>Skripsi</b></span>
 			</a>
 			<nav class="navbar navbar-static-top">
 				<a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
