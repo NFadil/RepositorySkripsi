@@ -23,7 +23,7 @@
             <thead>
               <tr>
                 <th>Username</th>
-                <th>Passwotrd</th>
+                <th>Password</th>
                 <th>Role</th>
                 <th>Profile</th>
               </tr>
